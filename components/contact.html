@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechVibe Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Get in Touch</h2>
+
+       
+        <div class="contact-card">
+
+            <div id="banner" style="display:none; background-color: #4caf50; color: white; padding: 15px; text-align: center; border-radius: 5px;">
+                Message Sent!
+            </div>
+
+         
+            <form id="contactForm" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 TechVibe Pro Kickstarter</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                document.getElementById('banner').style.display = 'block';
+
+ 
+                setTimeout(function() {
+                    window.location.href = 'index.html';
+                }, 2000);
+            }
+        });
+    </script>
+</body>
+</html>

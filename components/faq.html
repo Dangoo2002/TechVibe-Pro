@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - TechVibe Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>FAQs</h2>
+        <dl class="faq-list">
+            <div class="faq-item">
+                <dt>What is the TechVibe Pro ?</dt>
+                <dd>This product is a tech innovation that combines design and functionality.</dd>
+                <button class="dropdown-btn">+</button>
+            </div>
+            
+            <div class="faq-item">
+                <dt>How can I support the campaign?</dt>
+                <dd>You can pledge to our Kickstarter campaign and share it with others.</dd>
+                <button class="dropdown-btn">+</button>
+            </div>
+
+            <div class="faq-item">
+                <dt>What makes TechVibe Pro  unique?</dt>
+                <dd>Our product stands out for its sleek design, eco-friendly materials, and advanced technology integration.</dd>
+                <button class="dropdown-btn">+</button>
+            </div>
+
+            <div class="faq-item">
+                <dt>When will TechVibe Pro  be available?</dt>
+                <dd>We expect TechVibe Pro  to be ready for shipment within 6 months after the Kickstarter campaign ends.</dd>
+                <button class="dropdown-btn">+</button>
+            </div>
+
+            <div class="faq-item">
+                <dt>What are the payment options?</dt>
+                <dd>We accept payments through credit cards, PayPal, and other popular online payment methods.</dd>
+                <button class="dropdown-btn">+</button>
+            </div>
+
+            <div class="faq-item">
+                <dt>Is there a warranty on TechVibe Pro ?</dt>
+                <dd>Yes, all backers receive a one-year warranty that covers any manufacturing defects.</dd>
+                <button class="dropdown-btn">+</button>
+            </div>
+
+            <div class="faq-item">
+                <dt>Can I return the product if I’m not satisfied?</dt>
+                <dd>We offer a 30-day return policy for all customers who are not satisfied with the product.</dd>
+                <button class="dropdown-btn">+</button>
+            </div>
+        </dl>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 TechVibe Pro Kickstarter</p>
+    </footer>
+
+   
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const btn = item.querySelector('.dropdown-btn');
+            const answer = item.querySelector('dd');
+            
+            btn.addEventListener('click', () => {
+                answer.classList.toggle('show');
+                btn.textContent = btn.textContent === '+' ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVibe Pro Kickstarter</title>
+    <link rel="stylesheet" href="/components/style.css">
+</head>
+<body>
+    <header>
+        <h1>TechVibe Pro Kickstarter</h1>
+       
+        <div id="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="intro">
+            <div class="intro-overlay">
+                <h2>Welcome to Our Kickstarter Campaign</h2>
+                <p>We are excited to introduce our latest innovation, designed to revolutionize the tech industry.</p>
+                <a href="#features" class="cta-button">Explore Features</a>
+            </div>
+        </section>
+        
+        <section id="features">
+            <h2>Product Features</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>High-end Design</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Our product boasts a high-end design, combining sleek aesthetics with functionality to provide users with a device that is both beautiful and practical.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Advanced Technology</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>TechVibe Pro integrates the latest advancements in technology, offering cutting-edge performance and features for an unmatched user experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Eco-friendly Materials</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Built with eco-friendly materials, TechVibe Pro prioritizes sustainability, ensuring minimal environmental impact without sacrificing quality.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Affordable Price</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Despite its premium features and design, TechVibe Pro is offered at an affordable price point, making high-end technology accessible to everyone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+     
+    <footer>
+        <p>&copy; 2024 TechVibe Pro Kickstarter</p>
+    </footer>
+
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
